@@ -19,7 +19,7 @@ class App extends Component {
 
 	render() {
 		const { userInputName } = this.state; // instead of using this.state.userInputName  everytime you can just destructure the state and use userInputName alone
-		// here is a link : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+		//? here is a link : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 		const listName = userInputName.split('').map((chars, index) => {
 			return <Char character={chars} key={index} clicked={() => this.deleteInputName(index)} />;
 		});
